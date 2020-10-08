@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.HolaMundoWebForms.UI", "01.HolaMundoWebForms.UI\01.HolaMundoWebForms.UI.csproj", "{FFEB14DB-059F-4ECB-B964-6ABAF0296BA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.HolaMundoWebForms.Clases", "01.HolaMundoWebForms.Clases\01.HolaMundoWebForms.Clases.csproj", "{73B1BBA0-CC22-4CFD-B95A-10A178E2DBC3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFEB14DB-059F-4ECB-B964-6ABAF0296BA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFEB14DB-059F-4ECB-B964-6ABAF0296BA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFEB14DB-059F-4ECB-B964-6ABAF0296BA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFEB14DB-059F-4ECB-B964-6ABAF0296BA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73B1BBA0-CC22-4CFD-B95A-10A178E2DBC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73B1BBA0-CC22-4CFD-B95A-10A178E2DBC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73B1BBA0-CC22-4CFD-B95A-10A178E2DBC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73B1BBA0-CC22-4CFD-B95A-10A178E2DBC3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {57CFDD67-83AA-4BD4-9F64-CCB33A0916D2}
+	EndGlobalSection
+EndGlobal

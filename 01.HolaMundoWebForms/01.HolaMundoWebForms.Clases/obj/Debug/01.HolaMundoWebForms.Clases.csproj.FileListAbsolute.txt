@@ -1,0 +1,6 @@
+D:\JuanAntonioQuintero\GitHub\Sistemas\01.HolaMundoWebForms\01.HolaMundoWebForms.Clases\bin\Debug\01.HolaMundoWebForms.Clases.dll
+D:\JuanAntonioQuintero\GitHub\Sistemas\01.HolaMundoWebForms\01.HolaMundoWebForms.Clases\bin\Debug\01.HolaMundoWebForms.Clases.pdb
+D:\JuanAntonioQuintero\GitHub\Sistemas\01.HolaMundoWebForms\01.HolaMundoWebForms.Clases\obj\Debug\01.HolaMundoWebForms.Clases.csprojAssemblyReference.cache
+D:\JuanAntonioQuintero\GitHub\Sistemas\01.HolaMundoWebForms\01.HolaMundoWebForms.Clases\obj\Debug\01.HolaMundoWebForms.Clases.csproj.CoreCompileInputs.cache
+D:\JuanAntonioQuintero\GitHub\Sistemas\01.HolaMundoWebForms\01.HolaMundoWebForms.Clases\obj\Debug\01.HolaMundoWebForms.Clases.dll
+D:\JuanAntonioQuintero\GitHub\Sistemas\01.HolaMundoWebForms\01.HolaMundoWebForms.Clases\obj\Debug\01.HolaMundoWebForms.Clases.pdb
