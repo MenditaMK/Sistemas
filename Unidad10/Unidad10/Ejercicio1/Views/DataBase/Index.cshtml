@@ -1,0 +1,21 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <form method="post">
+            <button type="submit">Comprobar conexión</button>
+        </form>
+        <p><label>Estado de la conexión: @ViewData["ConnectionStatus"]</label></p>
+    </div>
+</body>
+</html>

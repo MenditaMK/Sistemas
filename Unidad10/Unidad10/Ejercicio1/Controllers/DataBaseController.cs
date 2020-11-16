@@ -19,14 +19,21 @@ namespace Ejercicio1.Controllers
         [HttpPost, ActionName("Index")]
         public ActionResult IndexPost() {
             SqlConnection connection = new SqlConnection();
+
+            connection.ConnectionString = "server = jaquintero.database.windows.net; database = jaquintero; uid = prueba; pwd = Mitesoro1.";
             try
             {
-                connection.ConnectionString = "server = jaquintero.database.windows.net; database = jaquintero; uid = prueba; pwd = Mitesoro1.";
-
                 connection.Open();
+                ViewData["ConnectionStatus"] = connection.State.ToString();
             }
-            catch (SqlException exception) { 
-                
+            catch (SqlException exception)
+            {
+                // throw exception;
+                //No se lanza excepciones aqui
+                ViewData["ConnectionStatus"] = "Error de conexión";
+            }
+            finally {
+                connection.Close();
             }
             return View();
         }
