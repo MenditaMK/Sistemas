@@ -20,7 +20,8 @@ namespace Ejercicio1.Controllers
         public ActionResult IndexPost() {
             SqlConnection connection = new SqlConnection();
 
-            connection.ConnectionString = "server = jaquintero.database.windows.net; database = jaquintero; uid = prueba; pwd = Mitesoro1.";
+            connection.ConnectionString = "Server = tcp:jaquintero.database.windows.net, 1433; Initial Catalog = jaquintero; User ID = jaquintero; Password = Mitesoro1.; Encrypt = True; TrustServerCertificate = False;" +
+                " Connection Timeout = 30;";
             try
             {
                 connection.Open();
