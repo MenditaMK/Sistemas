@@ -1,0 +1,2 @@
+C:\Users\mendi\Documents\GitHub\Sistemas\Unidad10\Unidad10\Ejercicio2.2\obj\Debug\Ejercicio2.2.csprojAssemblyReference.cache
+C:\Users\mendi\Documents\GitHub\Sistemas\Unidad10\Unidad10\Ejercicio2.2\obj\Debug\Ejercicio2.2.csproj.CoreCompileInputs.cache
