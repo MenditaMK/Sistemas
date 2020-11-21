@@ -75,3 +75,4 @@ C:\Users\mendi\Documents\GitHub\Sistemas\Unidad10Verdad\Definitivo\Ejercicio2\bi
 C:\Users\mendi\Documents\GitHub\Sistemas\Unidad10Verdad\Definitivo\Ejercicio2\obj\Debug\Ejercicio2.csproj.CopyComplete
 C:\Users\mendi\Documents\GitHub\Sistemas\Unidad10Verdad\Definitivo\Ejercicio2\obj\Debug\Ejercicio2.dll
 C:\Users\mendi\Documents\GitHub\Sistemas\Unidad10Verdad\Definitivo\Ejercicio2\obj\Debug\Ejercicio2.pdb
+C:\Users\mendi\Documents\GitHub\Sistemas\Unidad10Verdad\Definitivo\Ejercicio2\obj\Debug\Ejercicio2.csprojAssemblyReference.cache
