@@ -42,12 +42,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Handlers\clsGestoraPersonaBL.cs" />
+    <Compile Include="Listados\clsListadoDepartamentosBL.cs" />
+    <Compile Include="Listados\clsListadoPersonasBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Handlers\" />
-    <Folder Include="Listados\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\CRUDPersonas_DAL\CRUDPersonas_DAL.csproj">
       <Project>{f07c2da7-ce80-48c3-ab09-c095b584ebfe}</Project>

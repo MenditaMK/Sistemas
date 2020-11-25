@@ -1,0 +1,49 @@
+ENTITY
+	-clsPersona
+	-clsDepartamento
+DAL
+	-Conexion (Carpeta)
+		-clsConexion
+			-getConexion: Devuelve una conexion abierta
+			-closeConexion: Recibe una conexion y la cierra
+	-Gestora (Carpeta)
+		-clsHandlerPersonaDAL:
+			-BorrarPersonaDAL(ID) - retorna un entero con filas afectas(int)
+			-CrearPersona(clsPersona) - retorna un entero con filas afectas(int)
+			-ActualizarPersonaDAL(clsPersona) - retorna un entero con filas afectas(int)
+	-Listado (Carpeta)
+		-clsListadoPersonasDAL:
+			-getListadoCompleto - return List<clsPersona>
+			-getPersonaPorID(ID)
+		-clsListadoDepartamento
+			-getListadoCompleto
+			-getNombreDepartamentoPorID
+
+BL
+	-Gestora (Carpeta)
+		-clsHandlerPersonaBL:
+			-BorrarPersona(ID)
+			-CrearPersona
+			-ActualizarPersona(ID)
+	-Listado (Carpeta)
+UI
+	-View
+		-Listado
+		-Editar
+		-Borrar
+		-Crear
+		-Detalles
+	-Model
+		-clsPersonaConNombreDepartamento
+		-clsListadioDePersonaConNombreDepartamento<clsPersonaConNombreDepartamento>
+			-getListadoPersonasConNombreDepartamento
+		-clsPersonaConListadoDepartamentos
+	-Controller
+		-PersonasController
+			-Listado: Devuelve la vista listado que recibe un listado de personas
+			-Edit: Devuelve una vista con un formulario previamente rellenado con los datos de la persona correspondiente 
+				para editar una persona que recibe como modelo un clsPersonaConListadoDepartamentos
+			-Create: Devuelve una vista con un formulario vacio para crear una nueva y envia a BL un clsPersona
+			-Delete: Devuelve una vista para eliminar una persona que recibe un clsPersona
+			-Details: Devuelve una vista donde visualizaremos todos los datos relaciones a una persona, recibe una 
+				clsPersonaConNombreDepartamento

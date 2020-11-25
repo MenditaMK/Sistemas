@@ -42,13 +42,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="Conexion\clsConexion.cs" />
+    <Compile Include="Conexion\clsMyConnection.cs" />
+    <Compile Include="Handlers\clsGestoraPersonaDAL.cs" />
+    <Compile Include="Listados\clsListadoDepartamentoDAL.cs" />
+    <Compile Include="Listados\clsListadoPersonasDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Handlers\" />
-    <Folder Include="Listados\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\CRUDPersonas_Entidades\CRUDPersonas_Entidades.csproj">
       <Project>{3e9d95d0-71cb-47d9-8bed-89af9ffabaa1}</Project>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,7 +22,7 @@ using System.Threading.Tasks;
 
 namespace CRUDPersonas_DAL.Conexion
 {
-    public class clsConexion
+    public class clsMyConnection
     {
         #region Atributos
         public String server { get; set; }
