@@ -1,0 +1,11 @@
+D:\JuanAntonioQuintero\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_BL\bin\Debug\CRUDPersonas_BL.dll
+D:\JuanAntonioQuintero\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_BL\bin\Debug\CRUDPersonas_BL.pdb
+D:\JuanAntonioQuintero\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_BL\bin\Debug\CRUDPersonas_DAL.dll
+D:\JuanAntonioQuintero\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_BL\bin\Debug\CRUDPersonas_Entidades.dll
+D:\JuanAntonioQuintero\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_BL\bin\Debug\CRUDPersonas_DAL.pdb
+D:\JuanAntonioQuintero\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_BL\bin\Debug\CRUDPersonas_Entidades.pdb
+D:\JuanAntonioQuintero\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_BL\obj\Debug\CRUDPersonas_BL.csprojAssemblyReference.cache
+D:\JuanAntonioQuintero\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_BL\obj\Debug\CRUDPersonas_BL.csproj.CoreCompileInputs.cache
+D:\JuanAntonioQuintero\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_BL\obj\Debug\CRUDPersonas_BL.csproj.CopyComplete
+D:\JuanAntonioQuintero\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_BL\obj\Debug\CRUDPersonas_BL.dll
+D:\JuanAntonioQuintero\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_BL\obj\Debug\CRUDPersonas_BL.pdb
