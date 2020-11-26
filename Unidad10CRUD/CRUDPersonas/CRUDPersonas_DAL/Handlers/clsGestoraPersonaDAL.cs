@@ -159,28 +159,36 @@ namespace CRUDPersonas_DAL.Handlers
             SqlConnection sqlConnection = new SqlConnection();
             clsMyConnection conexion = new clsMyConnection();
             SqlCommand command = new SqlCommand();
-            command.Parameters.Add("@ID", System.Data.SqlDbType.Int).Value = persona.Id;
-            command.Parameters.Add("@Nombre", System.Data.SqlDbType.NVarChar).Value = persona.Nombre;
-            command.Parameters.Add("@Apellidos", System.Data.SqlDbType.NVarChar).Value = persona.Apellidos == null ? (Object)DBNull.Value : persona.Apellidos;
-            command.Parameters.Add("@FechaNacimiento", System.Data.SqlDbType.Date).Value = persona.FechaNacimiento == new DateTime() ? (Object)DBNull.Value : persona.FechaNacimiento;
-            command.Parameters.Add("@Foto", System.Data.SqlDbType.VarBinary).Value = persona.Imagen == null ? (Object)DBNull.Value : persona.Imagen;
-            command.Parameters.Add("@Direccion", System.Data.SqlDbType.NVarChar).Value = persona.Direccion == null ? (Object)DBNull.Value : persona.Direccion;
-            command.Parameters.Add("@Telefono", System.Data.SqlDbType.NVarChar).Value = persona.Telefono == null ? (Object)DBNull.Value : persona.Telefono;
-            command.Parameters.Add("@IDDepartamento", System.Data.SqlDbType.Int).Value = persona.IdDepartamento == 0 ? (Object)DBNull.Value : persona.IdDepartamento;
+            //command.Parameters.Add("@ID", System.Data.SqlDbType.Int).Value = persona.Id;
+            //command.Parameters.Add("@Nombre", System.Data.SqlDbType.NVarChar).Value = persona.Nombre;
+            //command.Parameters.Add("@Apellidos", System.Data.SqlDbType.NVarChar).Value = persona.Apellidos == null ? (Object)DBNull.Value : persona.Apellidos;
+            //command.Parameters.Add("@FechaNacimiento", System.Data.SqlDbType.Date).Value = persona.FechaNacimiento == new DateTime() ? (Object)DBNull.Value : persona.FechaNacimiento;
+            //command.Parameters.Add("@Foto", System.Data.SqlDbType.VarBinary).Value = persona.Imagen == null ? (Object)DBNull.Value : persona.Imagen;
+            //command.Parameters.Add("@Direccion", System.Data.SqlDbType.NVarChar).Value = persona.Direccion == null ? (Object)DBNull.Value : persona.Direccion;
+            //command.Parameters.Add("@Telefono", System.Data.SqlDbType.NVarChar).Value = persona.Telefono == null ? (Object)DBNull.Value : persona.Telefono;
+            //command.Parameters.Add("@IDDepartamento", System.Data.SqlDbType.Int).Value = persona.IdDepartamento == 0 ? (Object)DBNull.Value : persona.IdDepartamento;
 
-            command.CommandText = "UPDATE dbo.Personas SET " +
-                "Nombre = @Nombre, " +
-                "Apellidos = @Apellidos, " +
-                "FechaNacimiento = @FechaNacimiento, " +
-                "Foto = @Foto, " +
-                "Direccion = @Direccion, " +
-                "Telefono = @Telefono, " +
-                "IDDepartamento = @IDDepartamento " +
-                "WHERE ID = @ID";
+            //command.CommandText = "UPDATE dbo.Personas SET " +
+            //    "Nombre = @Nombre, " +
+            //    "Apellidos = @Apellidos, " +
+            //    "FechaNacimiento = @FechaNacimiento, " +
+            //    "Foto = @Foto, " +
+            //    "Direccion = @Direccion, " +
+            //    "Telefono = @Telefono, " +
+            //    "IDDepartamento = @IDDepartamento " +
+            //    "WHERE ID = @ID";
 
             try {
                 sqlConnection = conexion.getConnection();
                 command.Connection = sqlConnection;
+                command.CommandText = "set dateformat dmy";
+                command.ExecuteNonQuery();
+                command.CommandText = $"UPDATE Personas " +
+                                         $"SET Nombre = '{persona.Nombre}' ,Apellidos = '{persona.Apellidos}' ," +
+                                         $"FechaNacimiento = '{persona.FechaNacimiento}'," +    //,Foto = {persona.Imagen}  //LA MALDITA FOTO FALLA
+                                         $"Direccion = '{persona.Direccion}' ,Telefono = '{persona.Telefono}' ," +
+                                         $"IDDepartamento = {persona.IdDepartamento} " +
+                                         $"WHERE ID = {persona.Id}";
                 command.ExecuteNonQuery();
             }
             catch (SqlException e)

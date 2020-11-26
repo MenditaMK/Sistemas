@@ -59,9 +59,9 @@ namespace CRUDPersonas_UI.Controllers
             personaNueva.Apellidos = persona.Apellidos;
             personaNueva.FechaNacimiento = persona.FechaNacimiento;
             personaNueva.Imagen = persona.Imagen;
-            persona.Direccion = persona.Direccion;
-            persona.Telefono = persona.Telefono;
-            persona.IdDepartamento = persona.IdDepartamento;
+            personaNueva.Direccion = persona.Direccion;
+            personaNueva.Telefono = persona.Telefono;
+            personaNueva.IdDepartamento = persona.IdDepartamento;
 
             try {
                 clsGestoraPersonaBL.actualizarPersona(personaNueva);
@@ -92,7 +92,7 @@ namespace CRUDPersonas_UI.Controllers
             try {
                 clsGestoraPersonaBL.insertarPersona(personaNueva);
             } catch (SqlException e) {
-                return View("Error");
+                throw e;
             }
             return RedirectToAction("Index");
         }
