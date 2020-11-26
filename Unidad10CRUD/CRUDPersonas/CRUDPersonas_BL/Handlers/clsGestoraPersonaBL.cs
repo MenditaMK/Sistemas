@@ -23,5 +23,9 @@ namespace CRUDPersonas_BL.Handlers
         public static clsPersona obtenerPersonaPorID(int id) {
             return clsGestoraPersonaDAL.obtenerPersonaPorID(id);
         }
+
+        public static void actualizarPersona(clsPersona persona) {
+            clsGestoraPersonaDAL.actualizarPersona(persona);
+        }
     }
 }

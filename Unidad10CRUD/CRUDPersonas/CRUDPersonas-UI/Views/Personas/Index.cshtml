@@ -1,19 +1,60 @@
-﻿@model IEnumerable<CRUDPersonas_Entidades.clsPersona>
+﻿@model IEnumerable<CRUDPersonas_UI.Models.clsPersonaNombreDepartamento>
 
 @{
     Layout = null;
 }
 
 <!DOCTYPE html>
-
+<link href="~/Views/Personas/pageModel.css"
+      rel="stylesheet"/>
 <html>
+<style>
+    table {
+        font-size: 12px;
+        font-weight: bold;
+        background-color: #fdfdf1;
+        background-image: url(fondo_tr02.png);
+        background-repeat: repeat-x;
+        color: #990000;
+        font-family: “Trebuchet MS”, Arial;
+        text-align: left;
+    }
+
+        table td {
+            padding: 5px;
+            border-right-width: 1px;
+            border-bottom-width: 1px;
+            border-right-style: solid;
+            border-bottom-style: solid;
+            border-right-color: #EBE9BC;
+            border-bottom-color: #EBE9BC;
+        }
+
+        table th {
+            background-image: url(fondo_tr02a.png);
+            background-position: left top;
+            font-size: 12px;
+            font-weight: bold;
+            background-color: #fdfdf1;
+            background-repeat: repeat-x;
+            color: #990000;
+            font-family: “Trebuchet MS”, Arial;
+            text-align: left;
+            border-right-width: 1px;
+            border-bottom-width: 1px;
+            border-right-style: solid;
+            border-bottom-style: solid;
+            border-right-color: #EBE9BC;
+            border-bottom-color: #EBE9BC;
+        }
+</style>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
 </head>
 <body>
     <p>
-        @Html.ActionLink("Create New", "../Create/Create")
+        @Html.ActionLink("Create New", "Create")
     </p>
     <table class="table">
         <tr>
@@ -33,7 +74,7 @@
                 @Html.DisplayNameFor(model => model.Telefono)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IdDepartamento)
+                @Html.DisplayNameFor(model => model.NombreDepartamento)
             </th>
             <th></th>
         </tr>
@@ -56,7 +97,7 @@
                 @Html.DisplayFor(modelItem => item.Telefono)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IdDepartamento)
+                @Html.DisplayFor(modelItem => item.NombreDepartamento)
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
