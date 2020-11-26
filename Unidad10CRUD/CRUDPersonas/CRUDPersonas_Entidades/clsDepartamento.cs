@@ -20,7 +20,10 @@ namespace CRUDPersonas_Entidades
             this.Nombre = nombre;
         }
 
-        public clsDepartamento() { }
+        public clsDepartamento() {
+            this.id = 0;
+            this.nombre = "";
+        }
         #endregion
 
         #region Propiedades

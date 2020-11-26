@@ -115,7 +115,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\clsListadoPersonasNombreDepartamento.cs" />
     <Compile Include="Models\clsPersonaListadoDepartamentos.cs" />
     <Compile Include="Models\clsPersonaNombreDepartamento.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

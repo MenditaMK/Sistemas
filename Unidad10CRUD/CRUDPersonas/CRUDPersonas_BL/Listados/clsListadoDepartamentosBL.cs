@@ -12,6 +12,12 @@ namespace CRUDPersonas_BL.Listados
     {
         public static List<clsDepartamento> obtenerListadoDepartamentos()
         {
+            //List<clsDepartamento> listado = new List<clsDepartamento>();
+            //listado.Add(new clsDepartamento());
+            //foreach (clsDepartamento departamento in clsListadoDepartamentoDAL.obtenerListadoDepartamentos()) {
+            //    listado.Add(departamento);
+            //}
+            //return listado;
             return clsListadoDepartamentoDAL.obtenerListadoDepartamentos();
         }
 
