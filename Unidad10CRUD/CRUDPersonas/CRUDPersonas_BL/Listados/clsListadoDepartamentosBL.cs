@@ -10,17 +10,20 @@ namespace CRUDPersonas_BL.Listados
 {
     public class clsListadoDepartamentosBL
     {
+        /// <summary>
+        /// Este método llama a la capa DAL para obtener el listado completo de los departamentos
+        /// </summary>
+        /// <returns>El listado completo de los departamentos</returns>
         public static List<clsDepartamento> obtenerListadoDepartamentos()
         {
-            //List<clsDepartamento> listado = new List<clsDepartamento>();
-            //listado.Add(new clsDepartamento());
-            //foreach (clsDepartamento departamento in clsListadoDepartamentoDAL.obtenerListadoDepartamentos()) {
-            //    listado.Add(departamento);
-            //}
-            //return listado;
             return clsListadoDepartamentoDAL.obtenerListadoDepartamentos();
         }
 
+        /// <summary>
+        /// Este método llama a la capa DAL para obtener el nombre de un departamento a través de su id
+        /// </summary>
+        /// <param name="id">El id del departamento</param>
+        /// <returns>El nombre del departamento</returns>
         public static string obtenerNombreDepartamento(int id)
         {
             return clsListadoDepartamentoDAL.obtenerNombreDepartamento(id);

@@ -11,6 +11,10 @@ namespace CRUDPersonas_DAL.Listados
 {
     public class clsListadoDepartamentoDAL
     {
+        /// <summary>
+        /// Este método obtiene el listado completo de los departamentos de la base de datos
+        /// </summary>
+        /// <returns>El listado de los departamentos</returns>
         public static List<clsDepartamento> obtenerListadoDepartamentos()
         {
             List<clsDepartamento> listado = new List<clsDepartamento>();
@@ -50,6 +54,11 @@ namespace CRUDPersonas_DAL.Listados
             return listado;
         }
 
+        /// <summary>
+        /// Este método obtiene el nombre de un departamento a través de su id
+        /// </summary>
+        /// <param name="id">El id del departamento</param>
+        /// <returns>El nombre del departamento</returns>
         public static string obtenerNombreDepartamento(int id)
         {
             String nombreDepartamento = null;

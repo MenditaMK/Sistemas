@@ -11,8 +11,9 @@ namespace CRUDPersonas_BL.Listados
     public class clsListadoPersonasBL
     {
         /// <summary>
-        /// Esta función devuelve el listado completo de personas
+        /// Este método llama a la capa DAL para obtener el listado completo de las personas
         /// </summary>
+        /// <returns>El listado de las personas</returns>
         public static List<clsPersona> obtenerListadoCompleto()
         {
             List<clsPersona> listado = clsListadoPersonasDAL.obtenerListadoPersonas();

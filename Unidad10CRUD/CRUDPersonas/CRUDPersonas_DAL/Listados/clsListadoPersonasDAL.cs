@@ -14,7 +14,7 @@ namespace CRUDPersonas_DAL.Listados
         /// <summary>
         /// Esta funcion obtiene de la base de datos el listado completo de personas
         /// </summary>
-        /// <returns></returns>
+        /// <returns>El listado completo de las personas de la base de datos</returns>
         public static List<clsPersona> obtenerListadoPersonas()
         {
             clsMyConnection conexion = new clsMyConnection();
