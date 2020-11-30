@@ -2,23 +2,53 @@
 
 @{
     Layout = null;
+
+    String nombreCompleto = Model.Nombre+" "+ Model.Apellidos;
 }
 
 <!DOCTYPE html>
 
 <html>
+<style>
+
+    body {
+        border: solid;
+        border-color: #990000;
+        padding: 10px;
+        background-color: #fdfdf1;
+    }
+
+    div {
+        font-size: 12px;
+        font-weight: bold;
+        background-image: url(fondo_tr02.png);
+        background-repeat: repeat-x;
+        color: #990000;
+        font-family: “Trebuchet MS”, Arial;
+        text-align: left;
+        margin: 10px;
+    }
+
+    dt {
+        margin:10px;
+    }
+
+    dd {
+        color:black;
+    }
+</style>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Delete</title>
 </head>
 <body>
-    <h3>Are you sure you want to delete this?</h3>
+    <h3>¿Estás seguro de eliminar a esta persona?</h3>
     <div>
-        <h4>clsPersona</h4>
+        <h4>@nombreCompleto</h4>
         <hr />
         <dl class="dl-horizontal">
             <dt>
-                @Html.DisplayNameFor(model => model.Nombre)
+                <u>@Html.DisplayNameFor(model => model.Nombre)</u>
             </dt>
     
             <dd>
@@ -26,7 +56,7 @@
             </dd>
     
             <dt>
-                @Html.DisplayNameFor(model => model.Apellidos)
+               <u> @Html.DisplayNameFor(model => model.Apellidos)</u>
             </dt>
     
             <dd>
@@ -34,7 +64,7 @@
             </dd>
     
             <dt>
-                @Html.DisplayNameFor(model => model.FechaNacimiento)
+               <u>Fecha de nacimiento</u>
             </dt>
     
             <dd>
@@ -42,7 +72,7 @@
             </dd>
     
             <dt>
-                @Html.DisplayNameFor(model => model.Direccion)
+               <u>Dirección</u>
             </dt>
     
             <dd>
@@ -50,7 +80,7 @@
             </dd>
     
             <dt>
-                @Html.DisplayNameFor(model => model.Telefono)
+                <u>Teléfono</u>
             </dt>
     
             <dd>
@@ -58,7 +88,7 @@
             </dd>
     
             <dt>
-                @Html.DisplayNameFor(model => model.NombreDepartamento)
+               <u>Nombre del departamento</u>
             </dt>
     
             <dd>
@@ -71,8 +101,8 @@
             @Html.AntiForgeryToken()
     
             <div class="form-actions no-color">
-                <input type="submit" value="Delete" class="btn btn-default" /> |
-                @Html.ActionLink("Back to List", "Index")
+                <input type="submit" value="Eliminar" class="btn btn-default" /> |
+                @Html.ActionLink("Volver al menú principal", "Index")
             </div>
         }
     </div>

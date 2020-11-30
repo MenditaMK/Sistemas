@@ -2,22 +2,51 @@
 
 @{
     Layout = null;
+    String nombreCompleto = Model.Nombre + " " + Model.Apellidos;
 }
 
 <!DOCTYPE html>
 
 <html>
+<style>
+
+    body {
+        border: solid;
+        border-color: #990000;
+        padding: 10px;
+        background-color: #fdfdf1;
+    }
+
+    div {
+        font-size: 12px;
+        font-weight: bold;
+        background-image: url(fondo_tr02.png);
+        background-repeat: repeat-x;
+        color: #990000;
+        font-family: “Trebuchet MS”, Arial;
+        text-align: left;
+        margin: 10px;
+    }
+
+    dt {
+        margin: 10px;
+    }
+
+    dd {
+        color: black;
+    }
+</style>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Details</title>
 </head>
 <body>
     <div>
-        <h4>clsPersona</h4>
+        <h4>@nombreCompleto</h4>
         <hr />
         <dl class="dl-horizontal">
             <dt>
-                @Html.DisplayNameFor(model => model.Nombre)
+                <u>@Html.DisplayNameFor(model => model.Nombre)</u>
             </dt>
     
             <dd>
@@ -25,7 +54,7 @@
             </dd>
     
             <dt>
-                @Html.DisplayNameFor(model => model.Apellidos)
+                <u>@Html.DisplayNameFor(model => model.Apellidos)</u>
             </dt>
     
             <dd>
@@ -33,7 +62,7 @@
             </dd>
     
             <dt>
-                @Html.DisplayNameFor(model => model.FechaNacimiento)
+                <u>Fecha de nacimiento</u>
             </dt>
     
             <dd>
@@ -41,7 +70,7 @@
             </dd>
     
             <dt>
-                @Html.DisplayNameFor(model => model.Direccion)
+                <u>Dirección</u>
             </dt>
     
             <dd>
@@ -49,7 +78,7 @@
             </dd>
     
             <dt>
-                @Html.DisplayNameFor(model => model.Telefono)
+                <u>Teléfono</u>
             </dt>
     
             <dd>
@@ -57,7 +86,7 @@
             </dd>
     
             <dt>
-                @Html.DisplayNameFor(model => model.NombreDepartamento)
+                <u>Nombre del departamento</u>
             </dt>
     
             <dd>
@@ -67,8 +96,8 @@
         </dl>
     </div>
     <p>
-        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-        @Html.ActionLink("Back to List", "Index")
+        @Html.ActionLink("Editar", "Edit", new { id = Model.Id }) |
+        @Html.ActionLink("Volver al menú principal", "Index")
     </p>
 </body>
 </html>

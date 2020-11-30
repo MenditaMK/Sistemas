@@ -9,10 +9,15 @@
       rel="stylesheet"/>
 <html>
 <style>
+    body {
+        background-color: #fdfdf1;
+    }
+
     table {
+        border:solid;
         font-size: 12px;
         font-weight: bold;
-        background-color: #fdfdf1;
+        padding:5px;
         background-image: url(fondo_tr02.png);
         background-repeat: repeat-x;
         color: #990000;
@@ -46,6 +51,7 @@
             border-bottom-style: solid;
             border-right-color: #EBE9BC;
             border-bottom-color: #EBE9BC;
+            padding:5px;
         }
 </style>
 <head>
@@ -54,7 +60,7 @@
 </head>
 <body>
     <p>
-        @Html.ActionLink("Create New", "Create")
+        @Html.ActionLink("Crea una nueva persona", "Create")
     </p>
     <table class="table">
         <tr>
@@ -64,7 +70,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.Apellidos)
             </th>
-            <th>
+            @*<th>
                 @Html.DisplayNameFor(model => model.FechaNacimiento)
             </th>
             <th>
@@ -72,39 +78,39 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Telefono)
-            </th>
+            </th>*@
             <th>
-                @Html.DisplayNameFor(model => model.NombreDepartamento)
+                Nombre del departamento
             </th>
             <th></th>
         </tr>
     
     @foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nombre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Apellidos)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FechaNacimiento)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Direccion)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Telefono)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NombreDepartamento)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-                @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.Id })
-            </td>
-        </tr>
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Apellidos)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.FechaNacimiento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Direccion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Telefono)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.NombreDepartamento)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id = item.Id }) |
+            @Html.ActionLink("Detalles", "Details", new { id = item.Id }) |
+            @Html.ActionLink("Eliminar", "Delete", new { id = item.Id })
+        </td>
+    </tr>
     }
     
     </table>

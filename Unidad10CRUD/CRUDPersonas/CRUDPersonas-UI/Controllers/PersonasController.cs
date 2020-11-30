@@ -16,21 +16,32 @@ namespace CRUDPersonas_UI.Controllers
         // GET: Personas
         public ActionResult Index()
         {
-            List<clsPersona> listadoPersonas = clsListadoPersonasBL.obtenerListadoCompleto();
-            List<clsPersonaNombreDepartamento> listadoPersonasNombreDepartamento = new List<clsPersonaNombreDepartamento>();
-            clsPersonaNombreDepartamento personaNombreDepartamento;
-            foreach (clsPersona persona in listadoPersonas) {
-                personaNombreDepartamento = new clsPersonaNombreDepartamento(persona, clsListadoDepartamentosBL.obtenerNombreDepartamento(persona.IdDepartamento));
-                listadoPersonasNombreDepartamento.Add(personaNombreDepartamento);
+            try {
+                List<clsPersona> listadoPersonas = clsListadoPersonasBL.obtenerListadoCompleto();
+                List<clsPersonaNombreDepartamento> listadoPersonasNombreDepartamento = new List<clsPersonaNombreDepartamento>();
+                clsPersonaNombreDepartamento personaNombreDepartamento;
+                foreach (clsPersona persona in listadoPersonas)
+                {
+                    personaNombreDepartamento = new clsPersonaNombreDepartamento(persona, clsListadoDepartamentosBL.obtenerNombreDepartamento(persona.IdDepartamento));
+                    listadoPersonasNombreDepartamento.Add(personaNombreDepartamento);
+                }
+                return View("Index", listadoPersonasNombreDepartamento);
+            } catch (SqlException e) {
+                ViewData["Error"] = "Ha habido un error al obtener los datos de la persona";
+                return View("Error");
             }
-            return View("Index", listadoPersonasNombreDepartamento);
         }
 
-        #region DELETE
+        #region Delete
         public ActionResult Delete(int id) {
-            clsPersona persona = clsGestoraPersonaBL.obtenerPersonaPorID(id);
-            clsPersonaNombreDepartamento personaNombreDepartamento = new clsPersonaNombreDepartamento(persona, clsListadoDepartamentosBL.obtenerNombreDepartamento(persona.IdDepartamento));
-            return View("Delete", personaNombreDepartamento);
+            try {
+                clsPersona persona = clsGestoraPersonaBL.obtenerPersonaPorID(id);
+                clsPersonaNombreDepartamento personaNombreDepartamento = new clsPersonaNombreDepartamento(persona, clsListadoDepartamentosBL.obtenerNombreDepartamento(persona.IdDepartamento));
+                return View("Delete", personaNombreDepartamento);
+            } catch (SqlException e) {
+                ViewData["Error"] = "Ha habido un error al obtener los datos de la persona";
+                return View("Error");
+            }
         }
 
         [HttpPost, ActionName("Delete")]
@@ -38,6 +49,7 @@ namespace CRUDPersonas_UI.Controllers
             try {
                 clsGestoraPersonaBL.eliminarPersona(id);
             } catch (Exception e) {
+                ViewData["Error"] = "Ha habido un error al elimianr a la persona";
                 return RedirectToAction("Error");
             }
             return RedirectToAction("Index");
@@ -46,16 +58,22 @@ namespace CRUDPersonas_UI.Controllers
 
         #region Edit
         public ActionResult Edit(int id) {
-            clsPersona persona = clsGestoraPersonaBL.obtenerPersonaPorID(id);
-            clsPersonaListadoDepartamentos personaListadoDepartamentos = new clsPersonaListadoDepartamentos(persona);
-            return View("Edit", personaListadoDepartamentos);
+            try {
+                clsPersona persona = clsGestoraPersonaBL.obtenerPersonaPorID(id);
+                clsPersonaListadoDepartamentos personaListadoDepartamentos = new clsPersonaListadoDepartamentos(persona);
+                return View("Edit", personaListadoDepartamentos);
+            } catch (SqlException e) {
+                ViewData["Error"] = "Ha habido un error al obtener los datos de la persona";
+                return View("Error");
+            }
+            
         }
 
         [HttpPost, ActionName("Edit")]
         public ActionResult EditPost(clsPersonaListadoDepartamentos persona) {
             clsPersona personaNueva = new clsPersona();
             personaNueva.Id = persona.Id;
-            personaNueva.Nombre = personaNueva.Nombre;
+            personaNueva.Nombre = persona.Nombre;
             personaNueva.Apellidos = persona.Apellidos;
             personaNueva.FechaNacimiento = persona.FechaNacimiento;
             personaNueva.Imagen = persona.Imagen;
@@ -66,6 +84,7 @@ namespace CRUDPersonas_UI.Controllers
             try {
                 clsGestoraPersonaBL.actualizarPersona(personaNueva);
             } catch (SqlException e) {
+                ViewData["Error"] = "Ha habido un error al editar la persona";
                 return View("Error");
             }
             return RedirectToAction("Index");
@@ -92,7 +111,8 @@ namespace CRUDPersonas_UI.Controllers
             try {
                 clsGestoraPersonaBL.insertarPersona(personaNueva);
             } catch (SqlException e) {
-                throw e;
+                ViewData["Error"] = "Ha habido un error al crear a la persona";
+                return View("Error");
             }
             return RedirectToAction("Index");
         }
@@ -100,9 +120,14 @@ namespace CRUDPersonas_UI.Controllers
 
         #region Details
         public ActionResult Details(int id) {
-            clsPersona persona = clsGestoraPersonaBL.obtenerPersonaPorID(id);
-            clsPersonaNombreDepartamento personaConDepartamento = new clsPersonaNombreDepartamento(persona, clsListadoDepartamentosBL.obtenerNombreDepartamento(persona.IdDepartamento));
-            return View("Details", personaConDepartamento);
+            try {
+                clsPersona persona = clsGestoraPersonaBL.obtenerPersonaPorID(id);
+                clsPersonaNombreDepartamento personaConDepartamento = new clsPersonaNombreDepartamento(persona, clsListadoDepartamentosBL.obtenerNombreDepartamento(persona.IdDepartamento));
+                return View("Details", personaConDepartamento);
+            } catch (SqlException e) {
+                ViewData["Error"] = "Ha habido un error al obtener los datos de la persona";
+                return View("Error");
+            }
         }
         #endregion
 
