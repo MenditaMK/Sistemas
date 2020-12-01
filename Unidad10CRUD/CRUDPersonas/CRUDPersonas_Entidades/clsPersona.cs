@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -38,11 +39,16 @@ namespace CRUDPersonas_Entidades
 
         #region Propiedades
         public int Id { get => id; set => id = value; }
+        [Required]
         public string Nombre { get => nombre; set => nombre = value; }
         public string Apellidos { get => apellidos; set => apellidos = value; }
+
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode=true)]
         public DateTime FechaNacimiento { get => fechaNacimiento; set => fechaNacimiento = value; }
         public byte[] Imagen { get => imagen; set => imagen = value; }
         public string Direccion { get => direccion; set => direccion = value; }
+
+        [MaxLength(9)]
         public string Telefono { get => telefono; set => telefono = value; }
         public int IdDepartamento { get => idDepartamento; set => idDepartamento = value; }
         #endregion
