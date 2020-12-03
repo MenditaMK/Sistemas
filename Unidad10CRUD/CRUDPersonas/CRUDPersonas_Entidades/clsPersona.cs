@@ -41,6 +41,7 @@ namespace CRUDPersonas_Entidades
         public int Id { get => id; set => id = value; }
         [Required]
         public string Nombre { get => nombre; set => nombre = value; }
+        [MaxLength(40)]
         public string Apellidos { get => apellidos; set => apellidos = value; }
 
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode=true)]

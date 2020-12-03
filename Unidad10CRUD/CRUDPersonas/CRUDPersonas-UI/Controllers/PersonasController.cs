@@ -98,21 +98,31 @@ namespace CRUDPersonas_UI.Controllers
         }
 
         [HttpPost, ActionName("Create")]
-        public ActionResult CreatePost(clsPersonaListadoDepartamentos persona) {
-            clsPersona personaNueva = new clsPersona();
-            personaNueva.Nombre = persona.Nombre;
-            personaNueva.Apellidos = persona.Apellidos;
-            personaNueva.FechaNacimiento = persona.FechaNacimiento;
-            personaNueva.Imagen = persona.Imagen;
-            personaNueva.Direccion = persona.Direccion;
-            personaNueva.Telefono = persona.Telefono;
-            personaNueva.IdDepartamento = persona.IdDepartamento;
+        public ActionResult CreatePost(clsPersonaListadoDepartamentos persona, String boton) {
+            if (boton == "Crear nueva persona")
+            {
+                clsPersona personaNueva = new clsPersona();
+                personaNueva.Nombre = persona.Nombre;
+                personaNueva.Apellidos = persona.Apellidos;
+                personaNueva.FechaNacimiento = persona.FechaNacimiento;
+                personaNueva.Imagen = persona.Imagen;
+                personaNueva.Direccion = persona.Direccion;
+                personaNueva.Telefono = persona.Telefono;
+                personaNueva.IdDepartamento = persona.IdDepartamento;
 
-            try {
-                clsGestoraPersonaBL.insertarPersona(personaNueva);
-            } catch (SqlException e) {
-                ViewData["Error"] = "Ha habido un error al crear a la persona";
-                return View("Error");
+                try
+                {
+                    clsGestoraPersonaBL.insertarPersona(personaNueva);
+                }
+                catch (SqlException e)
+                {
+                    ViewData["Error"] = "Ha habido un error al crear a la persona";
+                    return View("Error");
+                }
+                return RedirectToAction("Index");
+            }
+            else if (boton == "prueba") {
+                
             }
             return RedirectToAction("Index");
         }
