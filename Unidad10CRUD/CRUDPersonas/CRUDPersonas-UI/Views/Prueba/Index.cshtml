@@ -14,5 +14,10 @@
     <div>
         @Html.DropDownListFor(model => model.IdDepartamento, new SelectList(Model.ListadoDepartamentos, "ID", "Nombre"), new { @class = "form-control" })
     </div>
+    <div>
+        @{
+            if (Model.Id == 1) { }
+                }
+    </div>
 </body>
 </html>
