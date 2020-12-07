@@ -1,0 +1,11 @@
+C:\Users\jaquintero\Desktop\ExamenSGE\ExamenSGE\ExamenSGE-BL\bin\Debug\ExamenSGE-BL.dll
+C:\Users\jaquintero\Desktop\ExamenSGE\ExamenSGE\ExamenSGE-BL\bin\Debug\ExamenSGE-BL.pdb
+C:\Users\jaquintero\Desktop\ExamenSGE\ExamenSGE\ExamenSGE-BL\bin\Debug\ExamenSGE-DAL.dll
+C:\Users\jaquintero\Desktop\ExamenSGE\ExamenSGE\ExamenSGE-BL\bin\Debug\ExamenSGE-Entidades.dll
+C:\Users\jaquintero\Desktop\ExamenSGE\ExamenSGE\ExamenSGE-BL\bin\Debug\ExamenSGE-DAL.pdb
+C:\Users\jaquintero\Desktop\ExamenSGE\ExamenSGE\ExamenSGE-BL\bin\Debug\ExamenSGE-Entidades.pdb
+C:\Users\jaquintero\Desktop\ExamenSGE\ExamenSGE\ExamenSGE-BL\obj\Debug\ExamenSGE-BL.csprojAssemblyReference.cache
+C:\Users\jaquintero\Desktop\ExamenSGE\ExamenSGE\ExamenSGE-BL\obj\Debug\ExamenSGE-BL.csproj.CoreCompileInputs.cache
+C:\Users\jaquintero\Desktop\ExamenSGE\ExamenSGE\ExamenSGE-BL\obj\Debug\ExamenSGE-BL.csproj.CopyComplete
+C:\Users\jaquintero\Desktop\ExamenSGE\ExamenSGE\ExamenSGE-BL\obj\Debug\ExamenSGE-BL.dll
+C:\Users\jaquintero\Desktop\ExamenSGE\ExamenSGE\ExamenSGE-BL\obj\Debug\ExamenSGE-BL.pdb

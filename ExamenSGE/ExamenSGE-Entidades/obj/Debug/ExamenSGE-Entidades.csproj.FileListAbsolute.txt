@@ -1,0 +1,6 @@
+C:\Users\jaquintero\Desktop\ExamenSGE\ExamenSGE\ExamenSGE-Entidades\bin\Debug\ExamenSGE-Entidades.dll
+C:\Users\jaquintero\Desktop\ExamenSGE\ExamenSGE\ExamenSGE-Entidades\bin\Debug\ExamenSGE-Entidades.pdb
+C:\Users\jaquintero\Desktop\ExamenSGE\ExamenSGE\ExamenSGE-Entidades\obj\Debug\ExamenSGE-Entidades.csprojAssemblyReference.cache
+C:\Users\jaquintero\Desktop\ExamenSGE\ExamenSGE\ExamenSGE-Entidades\obj\Debug\ExamenSGE-Entidades.csproj.CoreCompileInputs.cache
+C:\Users\jaquintero\Desktop\ExamenSGE\ExamenSGE\ExamenSGE-Entidades\obj\Debug\ExamenSGE-Entidades.dll
+C:\Users\jaquintero\Desktop\ExamenSGE\ExamenSGE\ExamenSGE-Entidades\obj\Debug\ExamenSGE-Entidades.pdb

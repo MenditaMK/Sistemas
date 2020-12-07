@@ -1,0 +1,22 @@
+-Capa DAL
+	-clsMyConnection
+	-clsGestoraMisionesDAL
+		-obtenerListadoMisionesNoCompletadas() : List<clsMision>
+		-actualizarListadoMisiones(List<clsMision>) : int
+-Capa BL
+	-clsGestoraMisionesBL
+		-obtenerListadoMisionesNoCompletadas() : List<clsMision>
+		-actualizarListadoMisiones(List<clsMision>) : int
+-Capa Entidades
+	- clsMisiones
+-Capa UI
+	- Modelos
+		-clsListadoMisionesNoCompletadas
+	- Vistas
+		-Index
+		-Error
+	- Controladores
+		-MisionesController
+			-ActionResult Index() : List<clsListadoMisionesNoCompletas>
+			-[POST]ActionResult IndexPost(List<clsListadoMisionesNoCompletadas>) : List<clsListadoMisionesNoCompletas>
+			-ActionResult Error()

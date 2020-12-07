@@ -1,0 +1,44 @@
+﻿@model ExamenSGE_UI.Models.clsListadoMisionesNoCompletadas
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<form method="post">
+    <table class="table">
+        <tr>
+            <th>
+                Nombre
+            </th>
+            <th>
+                Descripcion
+            </th>
+            <th>
+                Creditos
+            </th>
+            <th>
+                Completada
+            </th>
+
+            @foreach (var item in Model.ListadoMisionesNoCompletadas)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descripcion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Creditos)
+                </td>
+                <td>
+                    <input type="checkbox" value="@item.Completada" name="checkbox"/>
+                </td>
+            </tr>
+        }
+        </table>
+        <input type="submit" value="Guardar cambios" formmethod="post" name="boton" />
+    </form>
+
