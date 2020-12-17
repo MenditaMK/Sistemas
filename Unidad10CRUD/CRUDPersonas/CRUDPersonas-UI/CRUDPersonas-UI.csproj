@@ -97,6 +97,7 @@
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\jaquinterocrud - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -138,7 +139,6 @@
     <Content Include="Views\Personas\Create.cshtml" />
     <Content Include="Views\Personas\Details.cshtml" />
     <Content Include="Views\Personas\Error.cshtml" />
-    <Content Include="Views\Prueba\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
