@@ -45,19 +45,33 @@ namespace API.Controllers
         // POST: api/Personas
         public void Post([FromBody]clsPersona value)
         {
-            clsGestoraPersonaBL.insertarPersona(value);
+            try {
+                clsGestoraPersonaBL.insertarPersona(value);
+            } catch (Exception e) {
+                throw new HttpResponseException(HttpStatusCode.ServiceUnavailable);
+            }
         }
 
         // PUT: api/Personas/5
         public void Put(int id, [FromBody]clsPersona value)
         {
-            clsGestoraPersonaBL.actualizarPersona(value);
+            try {
+                clsGestoraPersonaBL.actualizarPersona(value);
+            } catch (Exception e) {
+                throw new HttpResponseException(HttpStatusCode.ServiceUnavailable);
+            }
+            
         }
 
         // DELETE: api/Personas/5
         public void Delete(int id)
         {
-            clsGestoraPersonaBL.eliminarPersona(id);
+            try {
+                clsGestoraPersonaBL.eliminarPersona(id);
+            } catch (Exception e) {
+                throw new HttpResponseException(HttpStatusCode.ServiceUnavailable);
+            }
+            
         }
     }
 }
