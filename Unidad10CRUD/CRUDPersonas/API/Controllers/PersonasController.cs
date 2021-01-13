@@ -33,7 +33,13 @@ namespace API.Controllers
         // GET: api/Personas/5
         public clsPersona Get(int id)
         {
-            return clsGestoraPersonaBL.obtenerPersonaPorID(id);
+            clsPersona persona;
+            try { 
+                persona = clsGestoraPersonaBL.obtenerPersonaPorID(id);
+            } catch (Exception e) {
+                throw new HttpResponseException(HttpStatusCode.ServiceUnavailable);
+            }
+            return persona;
         }
 
         // POST: api/Personas
@@ -49,9 +55,9 @@ namespace API.Controllers
         }
 
         // DELETE: api/Personas/5
-        public void Delete(clsPersona value)
+        public void Delete(int id)
         {
-            clsGestoraPersonaBL.eliminarPersona(value.Id);
+            clsGestoraPersonaBL.eliminarPersona(id);
         }
     }
 }
