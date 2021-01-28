@@ -7,13 +7,8 @@ function inicializarEventos() {
     document.getElementById("btnBorrar").addEventListener("click", borrarFila, false);
 }
 
-/* INTERFAZ
- * Prototipo: recorrerCeldas()
- * Funcion: Esta función recorre el contenido de una tabla y lo muestra a través de un alert
- * Entradas: --
- * Salidas: --
- * Precondiciones: --
- * Postcondiciones: Se muestra el contenido de la tabla
+/* 
+ * Esta función recorre la tabla y muestra el contenido de esta misma
  * */
 function recorrerCeldas() {
     var mensaje;
@@ -29,24 +24,20 @@ function recorrerCeldas() {
     alert(mensaje);
 }
 
-/* INTERFAZ
- * Prototipo: recorrerCeldas()
- * Funcion: Esta función recorre el contenido de una tabla y lo muestra a través de un alert
- * Entradas: --
- * Salidas: --
- * Precondiciones: --
- * Postcondiciones: Se muestra el contenido de la tabla
+/* 
+ * Esta función agrega una nueva fila a la tabla
  * */
 function agregarFila() {
 
     var fila = document.createElement("tr"); //Se crea una nueva fila
-    var numeroAnterior = tabla.rows[(tabla.rows.length - 1)].cells[0].innerText;
+    var numeroAnterior = tabla.rows.length;
+    var numero = parseInt(numeroAnterior) + 1;
 
     for (i = 0; i < tabla.rows[0].cells.length; i++) {
 
         celda = document.createElement("td");
-        numeroCelda = parseInt(numeroAnterior) + 10 + i;
-        textoCelda = document.createTextNode("Celda" + numeroCelda);
+        numeroCelda = numero * 10 + i + 1;
+        textoCelda = document.createTextNode("Celda " + numeroCelda);
 
         celda.appendChild(textoCelda);
         fila.appendChild(celda);
@@ -54,6 +45,9 @@ function agregarFila() {
     }
 }
 
+/*
+ * Esta función borra la ultima fila de la tabla
+ * */
 function borrarFila() {
     tabla.deleteRow(tabla.rows.length - 1);
 }
