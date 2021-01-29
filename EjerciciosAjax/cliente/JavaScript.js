@@ -6,6 +6,7 @@ function inicializa() {
 
 function saludar() {
     var llamada = new XMLHttpRequest();
+    //llamada.open("GET", "https://apicrud.azurewebsites.net/API/Personas/44");
     llamada.open("GET", "http://localhost:56626/servidor/Archivo.html");
 
     llamada.onreadystatechange = function () {
