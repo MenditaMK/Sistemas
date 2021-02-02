@@ -15,9 +15,10 @@ namespace CRUDPersonas_DAL.Handlers
         /// Esta función elimina de la base de datos a una persona
         /// </summary>
         /// <param name="persona">El id de la persona a eliminar</param>
-        /// <returns></returns>
-        public static void eliminarPersona(int id)
+        /// <returns>El númeror de filas afectadas</returns>
+        public static int eliminarPersona(int id)
         {
+            int filasAfectadas = 0;
             SqlConnection sqlConnection = new SqlConnection();
             clsMyConnection conexion = new clsMyConnection();
 
@@ -27,7 +28,7 @@ namespace CRUDPersonas_DAL.Handlers
                 sqlConnection = conexion.getConnection();
                 SqlCommand command = new SqlCommand(query, sqlConnection);
                 command.Parameters.AddWithValue("@ID", id);
-                command.ExecuteNonQuery();
+                filasAfectadas = command.ExecuteNonQuery();
             }
             catch (SqlException e)
             {
@@ -37,13 +38,15 @@ namespace CRUDPersonas_DAL.Handlers
             {
                 conexion.closeConnection(ref sqlConnection);
             }
+            return filasAfectadas;
         }
 
         /// <summary>
         /// Este método inserta a una persona en la base de datos
         /// </summary>
         /// <param name="persona">La persona a insertar</param>
-        public static void insertarPersona(clsPersona persona)
+        /// <returns>El númeror de filas afectadas</returns>
+        public static int insertarPersona(clsPersona persona)
         {
             clsMyConnection clsMyConnection = new clsMyConnection();
             SqlConnection sqlConnection = new SqlConnection();
@@ -77,6 +80,7 @@ namespace CRUDPersonas_DAL.Handlers
             {
                 clsMyConnection.closeConnection(ref sqlConnection);
             }
+            return numeroFilasAfectadas;
         }
 
         /// <summary>
@@ -143,10 +147,12 @@ namespace CRUDPersonas_DAL.Handlers
         /// Este método actualiza a una persona de la base de datos
         /// </summary>
         /// <param name="persona">La persona a actualizar</param>
-        public static void actualizarPersona(clsPersona persona) {
+        /// <returns>El númeror de filas afectadas</returns>
+        public static int actualizarPersona(clsPersona persona) {
             SqlConnection sqlConnection = new SqlConnection();
             clsMyConnection conexion = new clsMyConnection();
             SqlCommand command = new SqlCommand();
+            int filasAfectadas = 0;
 
             try {
                 sqlConnection = conexion.getConnection();
@@ -159,7 +165,7 @@ namespace CRUDPersonas_DAL.Handlers
                                          $"Direccion = '{persona.Direccion}' ,Telefono = '{persona.Telefono}' ," +
                                          $"IDDepartamento = {persona.IdDepartamento} " +
                                          $"WHERE ID = {persona.Id}";
-                command.ExecuteNonQuery();
+                filasAfectadas = command.ExecuteNonQuery();
             }
             catch (SqlException e)
             {
@@ -168,6 +174,7 @@ namespace CRUDPersonas_DAL.Handlers
             finally {
                 conexion.closeConnection(ref sqlConnection);
             }
+            return filasAfectadas;
         }
     }
 }

@@ -43,35 +43,40 @@ namespace API.Controllers
         }
 
         // POST: api/Personas
-        public void Post([FromBody]clsPersona value)
+        public int Post([FromBody]clsPersona value)
         {
+            int filasAfectadas = 0;
             try {
-                clsGestoraPersonaBL.insertarPersona(value);
+                filasAfectadas = clsGestoraPersonaBL.insertarPersona(value);
             } catch (Exception e) {
                 throw new HttpResponseException(HttpStatusCode.ServiceUnavailable);
             }
+            return filasAfectadas;
         }
 
         // PUT: api/Personas/5
-        public void Put(int id, [FromBody]clsPersona value)
+        public int Put(int id, [FromBody]clsPersona value)
         {
+            int filasAfectadas = 0;
             try {
-                clsGestoraPersonaBL.actualizarPersona(value);
+                filasAfectadas = clsGestoraPersonaBL.actualizarPersona(value);
             } catch (Exception e) {
                 throw new HttpResponseException(HttpStatusCode.ServiceUnavailable);
             }
+            return filasAfectadas;
             
         }
 
         // DELETE: api/Personas/5
-        public void Delete(int id)
+        public int Delete(int id)
         {
+            int filasAfectadas = 0;
             try {
-                clsGestoraPersonaBL.eliminarPersona(id);
+                filasAfectadas = clsGestoraPersonaBL.eliminarPersona(id);
             } catch (Exception e) {
                 throw new HttpResponseException(HttpStatusCode.ServiceUnavailable);
             }
-            
+            return filasAfectadas;
         }
     }
 }

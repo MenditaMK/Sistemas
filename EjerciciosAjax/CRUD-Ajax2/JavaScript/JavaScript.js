@@ -1,7 +1,8 @@
 ﻿window.onload = inicializarEventos;
-var lista;
+var lista = $(".table");
 var fila;
 var button;
+var idPersona;
 
 class clsPersona {
     constructor(nombre, apellidos, fechaNacimiento, direccion, telefono) {
@@ -16,7 +17,12 @@ class clsPersona {
 function inicializarEventos() {
     lista = document.getElementById("lista");
     let crear = document.getElementById("crear");
+    let eliminar = document.getElementById("eliminar");
+    let actualizar = document.getElementById("actualizar");
     crear.addEventListener("click", crearPersona, false);
+    eliminar.addEventListener("click", eliminarPersona, false);
+    actualizar.addEventListener("click", actualizarPersona, false);
+    
     cargarLista();
 
 }
@@ -39,7 +45,8 @@ function generarLista(listaPersonas) {
     for (let persona of listaPersonas) {
         fila = document.createElement("tr");
         celda = document.createElement("td");
-        
+        fila.className = persona["Id"];
+
         celda.appendChild(document.createElement("event"));
         celda.onclick = function () {
             vincularDatos(persona);
@@ -58,6 +65,7 @@ function vincularDatos(persona) {
     let telefono = document.getElementById("telefono");
     let departamento = document.getElementById("departamento");
 
+    idPersona = persona["Id"];
     nombre.value = persona["Nombre"];
     apellidos.value = persona["Apellidos"];
     let fechaCasteada = persona["FechaNacimiento"];
@@ -96,8 +104,23 @@ function crearPersona() {
         }
     };
     llamada.send(json);
+}
 
-    //SE QUEDA EL STATE EN 2
-    //CREAR UNA NUEVA FILA EN EL BLOQUE
-    //CAMBIAR CAPA DAL PARA QUE DEVUELVA 0
+function eliminarPersona() {
+    var llamada = new XMLHttpRequest();
+    llamada.open("DELETE", "https://apicrud.azurewebsites.net/API/Personas/" + idPersona);
+    llamada.onreadystatechange = function () {
+        if (llamada.readyState < 4) {
+        } else if (llamada.readyState == 4 && llamada.status == 200) {
+            let filaEliminada = document.getElementsByClassName(idPersona);
+            lista.removeChild(filaEliminada);
+            //FALTA ELIMINAR LA FILA DE LA TABLA
+        }
+    };
+    llamada.send();
+}
+
+function actualizarPersona() {
+    alert("hola");
+    document.g
 }

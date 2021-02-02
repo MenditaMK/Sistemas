@@ -14,18 +14,20 @@ namespace CRUDPersonas_BL.Handlers
         /// Este método llama a la capa DAL para eliminar a una persona de la base de datos
         /// </summary>
         /// <param name="id">El id de la persona a eliminar</param>
-        public static void eliminarPersona(int id)
+        /// <returns>El número de filas afectadas</returns>
+        public static int eliminarPersona(int id)
         {
-            clsGestoraPersonaDAL.eliminarPersona(id);
+            return clsGestoraPersonaDAL.eliminarPersona(id);
         }
 
         /// <summary>
         /// Este método llama a la capa DAL para insertar a una persona en la base de datos
         /// </summary>
         /// <param name="persona">La persona a insertar</param>
-        public static void insertarPersona(clsPersona persona)
+        /// <returns>El número de filas afectadas</returns>
+        public static int insertarPersona(clsPersona persona)
         {
-            clsGestoraPersonaDAL.insertarPersona(persona);
+            return clsGestoraPersonaDAL.insertarPersona(persona);
         }
 
         /// <summary>
@@ -41,8 +43,9 @@ namespace CRUDPersonas_BL.Handlers
         /// Este método llama a la capa DAL para actualizar a una persona de la base de datos
         /// </summary>
         /// <param name="persona">La persona a actualizar</param>
-        public static void actualizarPersona(clsPersona persona) {
-            clsGestoraPersonaDAL.actualizarPersona(persona);
+        /// <returns>El número de filas afectadas</returns>
+        public static int actualizarPersona(clsPersona persona) {
+            return clsGestoraPersonaDAL.actualizarPersona(persona);
         }
     }
 }
