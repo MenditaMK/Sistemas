@@ -1,0 +1,43 @@
+form {
+    width: 600px;
+    padding: 16px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: #ccc;
+}
+
+form label {
+    width: 150px;
+    font-weight: bold;
+    display: inline-block;
+
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="file"],
+form input[type="tel"] {
+    width: 370px;
+    padding: 3px 10px;
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    margin: 8px 0;
+    display: inline-block;
+}
+
+button {
+    color: #4D595E;
+    width: 70px;
+    border: 2px solid #89BCD4;
+    border-radius: 6px;
+    padding: 5px 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 2px;
+}
+
+button:hover {
+    cursor: pointer;
+}

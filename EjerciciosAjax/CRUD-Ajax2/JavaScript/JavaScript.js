@@ -1,5 +1,5 @@
 ﻿window.onload = inicializarEventos;
-var lista = $(".table");
+var lista
 var fila;
 var button;
 var idPersona;
@@ -45,7 +45,7 @@ function generarLista(listaPersonas) {
     for (let persona of listaPersonas) {
         fila = document.createElement("tr");
         celda = document.createElement("td");
-        fila.className = persona["Id"];
+        fila.id = persona["Id"];
 
         celda.appendChild(document.createElement("event"));
         celda.onclick = function () {
@@ -100,7 +100,7 @@ function crearPersona() {
             };
             lista.appendChild(fila);
             fila.appendChild(celda);
-            celda.innerHTML = persona["Nombre"] + " " + persona["Apellidos"];
+            celda.innerHTML = persona.nombre + " " + persona.apellidos;
         }
     };
     llamada.send(json);
@@ -112,8 +112,8 @@ function eliminarPersona() {
     llamada.onreadystatechange = function () {
         if (llamada.readyState < 4) {
         } else if (llamada.readyState == 4 && llamada.status == 200) {
-            let filaEliminada = document.getElementsByClassName(idPersona);
-            lista.removeChild(filaEliminada);
+            let filaEliminada = document.getElementById(idPersona);
+            lista.deleteRow(filaEliminada); //index
             //FALTA ELIMINAR LA FILA DE LA TABLA
         }
     };
@@ -122,5 +122,4 @@ function eliminarPersona() {
 
 function actualizarPersona() {
     alert("hola");
-    document.g
 }
