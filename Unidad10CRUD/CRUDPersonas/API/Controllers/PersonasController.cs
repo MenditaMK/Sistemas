@@ -59,6 +59,7 @@ namespace API.Controllers
         {
             int filasAfectadas = 0;
             try {
+                value.Id = id;
                 filasAfectadas = clsGestoraPersonaBL.actualizarPersona(value);
             } catch (Exception e) {
                 throw new HttpResponseException(HttpStatusCode.ServiceUnavailable);
