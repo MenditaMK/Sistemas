@@ -5,6 +5,7 @@
 
     td:hover {
         background-color: rgba(255,255,255,0.5);
+        cursor : pointer;
     }
 
 th, td {
@@ -18,7 +19,17 @@ th {
 }
 
 button {
-    border-radius: 10px;
+
+
+    color: #4D595E;
+    border: 2px solid #89BCD4;
+    border-radius: 6px;
+    padding: 5px 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 2px;
+
 }
 
 body {
@@ -66,4 +77,14 @@ table {
 
 .root {
     width: 100%;
+}
+
+form {
+    width: 600px;
+    padding: 16px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: #ccc;
+    margin: inherit;
+    margin-top: 50px;
 }

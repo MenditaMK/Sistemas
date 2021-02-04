@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <title>CRUD Personas</title>
-    <link rel="stylesheet" type="text/css" href="../css/StyleCSS.css" />
+    <link href="../css/StyleCSS.css" rel="stylesheet" />
+    <script src="../Entidades/clsPersona.js"></script>
     <script src="../JavaScript/JavaScript.js"></script>
 </head>
 <body>
@@ -15,7 +16,11 @@
                         <th>LISTADO PERSONAS</th>
                     </tr>
                 <td>
-                    <button type="submit" id="crear" value="Añadir nueva persona">Añadir nueva persona</button>
+                    <div>
+                        <input type="text" onkeyup="buscarPersonas()" id="busqueda" placeholder="Buscar a una persona"/>
+                        <button type="submit" id="crear" value="Añadir nueva persona">Añadir nueva persona</button>
+                    </div>
+                    
                 </td>
                 </thead>
             </table>
@@ -25,19 +30,19 @@
             <form>
 
                 <label>Nombre: </label> </p>
-                <input id="nombre" type="text" placeholder="Nombre" /> </p>
+                <input id="nombre" type="text" placeholder="Nombre *" /> </p>
                 <label>Apellidos: </label> </p>
-                <input id="apellidos" type="text" placeholder="Apellidos" /> </p>
+                <input id="apellidos" type="text" placeholder="Apellidos *" /> </p>
                 <label>Fecha de nacimiento:</label> </p>
-                <input id="fecha" type="date" placeholder="Fecha de nacimiento" /> </p>
+                <input id="fecha" type="date" placeholder="Fecha de nacimiento"/> </p>
                 <label>Dirección:</label> </p>
                 <input id="direccion" type="text" placeholder="Dirección" /> </p>
                 <label>Teléfono:</label> </p>
                 <input id="telefono" type="text" placeholder="Teléfono" /> </p>
                 <label>Departamento:</label> </p>
-                <label id="departamento"></label> </p>
-                <button class="buton" type="submit" id="eliminar" value="Eliminar persona">Eliminar persona</button>
-                <button class="buton" type="submit" id="actualizar" value="Actualizar persona">Guardar cambios</button>
+                <select id="listaDepartamentos"></select></p>
+                <button class="buton" type="button" id="eliminar" value="Eliminar persona">Eliminar persona</button>
+                <button class="buton" type="button" id="actualizar" value="Actualizar persona">Guardar cambios</button>
             </form>
 
         </div>
