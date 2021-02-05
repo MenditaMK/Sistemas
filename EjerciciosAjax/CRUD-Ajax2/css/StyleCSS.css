@@ -87,4 +87,5 @@ form {
     background-color: #ccc;
     margin: inherit;
     margin-top: 50px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
