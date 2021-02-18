@@ -12,4 +12,7 @@ export class TablaPersonasComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  irAListado(){
+    window.location.href="listado";
+  }
 }
