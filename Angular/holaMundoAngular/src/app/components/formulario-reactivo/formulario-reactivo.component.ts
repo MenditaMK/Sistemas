@@ -11,12 +11,15 @@ export class FormularioReactivoComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.formulario = new FormGroup{
+    this.formulario = new FormGroup(
       {
-        nombre: new FormControl('',[])
+        nombre: new FormControl('',[]),
         apellidos:new FormControl('',[])
       }
-    };
+    );
   }
 
+  saludar(){
+    alert("Hola "+this.formulario.controls.nombre.value+" "+this.formulario.controls.apellidos.value);
+  }
 }

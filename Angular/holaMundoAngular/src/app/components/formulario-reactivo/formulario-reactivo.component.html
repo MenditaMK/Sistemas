@@ -1,5 +1,5 @@
 
-<form [formGroup]="formulario">
+<div [formGroup]="formulario">
     <p>
         <span>Nombre: </span>
         <input type="text" id="nombre" formControlName="nombre"/>
@@ -8,4 +8,5 @@
         <span>Apellidos: </span>
         <input type="text" id="apellidos" formControlName="apellidos"/>
     </p>
-</form>
+    <button (click)=saludar()>Saludar</button>
+</div>
