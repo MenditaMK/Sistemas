@@ -1,0 +1,6 @@
+C:\Users\mendi\Documents\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEEntidades\bin\Debug\ExamenSGEEntidades.dll
+C:\Users\mendi\Documents\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEEntidades\bin\Debug\ExamenSGEEntidades.pdb
+C:\Users\mendi\Documents\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEEntidades\obj\Debug\ExamenSGEEntidades.csprojAssemblyReference.cache
+C:\Users\mendi\Documents\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEEntidades\obj\Debug\ExamenSGEEntidades.csproj.CoreCompileInputs.cache
+C:\Users\mendi\Documents\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEEntidades\obj\Debug\ExamenSGEEntidades.dll
+C:\Users\mendi\Documents\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEEntidades\obj\Debug\ExamenSGEEntidades.pdb

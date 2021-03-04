@@ -1,0 +1,2 @@
+C:\Users\mendi\Documents\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEDAL\obj\Debug\ExamenSGEDAL.csprojAssemblyReference.cache
+C:\Users\mendi\Documents\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEDAL\obj\Debug\ExamenSGEDAL.csproj.CoreCompileInputs.cache
