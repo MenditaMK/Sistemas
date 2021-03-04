@@ -22,7 +22,7 @@ function inicializarEventos() {
 function cargarLista() {
     var llamada = new XMLHttpRequest();
     let gif;
-    llamada.open("GET", "https://apicrud.azurewebsites.net/API/Personas/");
+    llamada.open("GET", "http://localhost:61836/API/Personas/");
     llamada.onreadystatechange = function () {
         if (llamada.readyState < 4) {
             if (llamada.readyState == 2) {
@@ -46,7 +46,7 @@ function cargarLista() {
  * */
 function cargarListadoDepartamentos() {
     var llamada = new XMLHttpRequest();
-    llamada.open("GET", "https://apicrud.azurewebsites.net/API/Departamentos/");
+    llamada.open("GET", "http://localhost:61836/API/Departamentos/");
     llamada.onreadystatechange = function () {
         if (llamada.readyState < 4) {
         } else if (llamada.readyState == 4 && llamada.status == 200) {
@@ -65,7 +65,7 @@ function eliminarPersona() {
     if (confirm("Estas seguro que quieres hacer esto?")) {
         if (idPersona != 0) {
             var llamada = new XMLHttpRequest();
-            llamada.open("DELETE", "https://apicrud.azurewebsites.net/API/Personas/" + idPersona);
+            llamada.open("DELETE", "http://localhost:61836/API/Personas/" + idPersona);
             llamada.onreadystatechange = function () {
                 if (llamada.readyState < 4) {
                     document.body.style.cursor = 'wait';
@@ -97,7 +97,7 @@ function insertarPersona() {
     let departamento = listadoDepartamentos.value;
     let persona = new clsPersona(nombre, apellidos, fecha, direccion, telefono, departamento);
     var llamada = new XMLHttpRequest();
-    llamada.open("POST", "https://apicrud.azurewebsites.net/API/Personas/");
+    llamada.open("POST", "http://localhost:61836//Personas/");
     llamada.setRequestHeader('Content-type', 'application/json; charset=utf-8');
     var json = JSON.stringify(persona);
     llamada.onreadystatechange = function () {
@@ -126,7 +126,7 @@ function actualizarPersona() {
     let departamento = listadoDepartamentos.value;
     let persona = new clsPersona(nombre, apellidos, fecha, direccion, telefono, departamento);
     var llamada = new XMLHttpRequest();
-    llamada.open("PUT", "https://apicrud.azurewebsites.net/API/Personas/" + idPersona);
+    llamada.open("PUT", "http://localhost:61836/API/Personas/" + idPersona);
     llamada.setRequestHeader('Content-type', 'application/json; charset=utf-8');
     var json = JSON.stringify(persona);
     llamada.onreadystatechange = function () {
