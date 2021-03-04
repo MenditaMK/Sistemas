@@ -1,0 +1,6 @@
+C:\Users\mendi\Documents\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEBL\bin\Debug\ExamenSGEBL.dll
+C:\Users\mendi\Documents\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEBL\bin\Debug\ExamenSGEBL.pdb
+C:\Users\mendi\Documents\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEBL\obj\Debug\ExamenSGEBL.csprojAssemblyReference.cache
+C:\Users\mendi\Documents\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEBL\obj\Debug\ExamenSGEBL.csproj.CoreCompileInputs.cache
+C:\Users\mendi\Documents\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEBL\obj\Debug\ExamenSGEBL.dll
+C:\Users\mendi\Documents\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEBL\obj\Debug\ExamenSGEBL.pdb
