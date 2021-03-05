@@ -1,2 +1,11 @@
 C:\Users\mendi\Documents\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEDAL\obj\Debug\ExamenSGEDAL.csprojAssemblyReference.cache
 C:\Users\mendi\Documents\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEDAL\obj\Debug\ExamenSGEDAL.csproj.CoreCompileInputs.cache
+D:\JuanAntonioQuintero\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEDAL\bin\Debug\ExamenSGEDAL.dll
+D:\JuanAntonioQuintero\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEDAL\bin\Debug\ExamenSGEDAL.pdb
+D:\JuanAntonioQuintero\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEDAL\bin\Debug\ExamenSGEEntidades.dll
+D:\JuanAntonioQuintero\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEDAL\bin\Debug\ExamenSGEEntidades.pdb
+D:\JuanAntonioQuintero\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEDAL\obj\Debug\ExamenSGEDAL.csprojAssemblyReference.cache
+D:\JuanAntonioQuintero\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEDAL\obj\Debug\ExamenSGEDAL.csproj.CoreCompileInputs.cache
+D:\JuanAntonioQuintero\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEDAL\obj\Debug\ExamenSGEDAL.csproj.CopyComplete
+D:\JuanAntonioQuintero\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEDAL\obj\Debug\ExamenSGEDAL.dll
+D:\JuanAntonioQuintero\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEDAL\obj\Debug\ExamenSGEDAL.pdb

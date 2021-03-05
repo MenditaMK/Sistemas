@@ -4,3 +4,9 @@ C:\Users\mendi\Documents\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEEntidade
 C:\Users\mendi\Documents\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEEntidades\obj\Debug\ExamenSGEEntidades.csproj.CoreCompileInputs.cache
 C:\Users\mendi\Documents\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEEntidades\obj\Debug\ExamenSGEEntidades.dll
 C:\Users\mendi\Documents\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEEntidades\obj\Debug\ExamenSGEEntidades.pdb
+D:\JuanAntonioQuintero\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEEntidades\bin\Debug\ExamenSGEEntidades.dll
+D:\JuanAntonioQuintero\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEEntidades\bin\Debug\ExamenSGEEntidades.pdb
+D:\JuanAntonioQuintero\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEEntidades\obj\Debug\ExamenSGEEntidades.csprojAssemblyReference.cache
+D:\JuanAntonioQuintero\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEEntidades\obj\Debug\ExamenSGEEntidades.csproj.CoreCompileInputs.cache
+D:\JuanAntonioQuintero\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEEntidades\obj\Debug\ExamenSGEEntidades.dll
+D:\JuanAntonioQuintero\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEEntidades\obj\Debug\ExamenSGEEntidades.pdb

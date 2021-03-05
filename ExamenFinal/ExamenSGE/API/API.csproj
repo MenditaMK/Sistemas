@@ -82,12 +82,13 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Vistas\Index.html" />
+    <Content Include="Vistas\Javascript\clsMisiones.js" />
     <Content Include="Vistas\Javascript\JavaScript.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\MisionController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

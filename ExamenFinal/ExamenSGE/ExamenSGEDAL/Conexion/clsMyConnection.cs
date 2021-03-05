@@ -21,10 +21,10 @@ namespace ExamenSGEDAL.Conexion
         public clsMyConnection()
         {
 
-            this.server = "jaquintero.database.windows.net";
-            this.dataBase = "jaquintero";
-            this.user = "jaquintero";
-            this.pass = "Mitesoro1.";
+            this.server = "localhost";
+            this.dataBase = "Mandalorian";
+            this.user = "prueba";
+            this.pass = "123";
 
         }
         //Con parámetros por si quisiera cambiar las conexiones

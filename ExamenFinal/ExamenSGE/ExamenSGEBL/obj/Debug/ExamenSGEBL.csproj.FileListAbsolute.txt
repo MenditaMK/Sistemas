@@ -4,3 +4,14 @@ C:\Users\mendi\Documents\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEBL\obj\D
 C:\Users\mendi\Documents\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEBL\obj\Debug\ExamenSGEBL.csproj.CoreCompileInputs.cache
 C:\Users\mendi\Documents\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEBL\obj\Debug\ExamenSGEBL.dll
 C:\Users\mendi\Documents\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEBL\obj\Debug\ExamenSGEBL.pdb
+D:\JuanAntonioQuintero\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEBL\bin\Debug\ExamenSGEBL.dll
+D:\JuanAntonioQuintero\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEBL\bin\Debug\ExamenSGEBL.pdb
+D:\JuanAntonioQuintero\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEBL\bin\Debug\ExamenSGEDAL.dll
+D:\JuanAntonioQuintero\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEBL\bin\Debug\ExamenSGEEntidades.dll
+D:\JuanAntonioQuintero\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEBL\bin\Debug\ExamenSGEDAL.pdb
+D:\JuanAntonioQuintero\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEBL\bin\Debug\ExamenSGEEntidades.pdb
+D:\JuanAntonioQuintero\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEBL\obj\Debug\ExamenSGEBL.csprojAssemblyReference.cache
+D:\JuanAntonioQuintero\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEBL\obj\Debug\ExamenSGEBL.csproj.CoreCompileInputs.cache
+D:\JuanAntonioQuintero\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEBL\obj\Debug\ExamenSGEBL.csproj.CopyComplete
+D:\JuanAntonioQuintero\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEBL\obj\Debug\ExamenSGEBL.dll
+D:\JuanAntonioQuintero\GitHub\Sistemas\ExamenFinal\ExamenSGE\ExamenSGEBL\obj\Debug\ExamenSGEBL.pdb
