@@ -42,7 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Handlers\clsGestoraArtistaBL.cs" />
     <Compile Include="Handlers\clsGestoraPersonaBL.cs" />
+    <Compile Include="Handlers\clsGestoraSalaBL.cs" />
+    <Compile Include="Handlers\clsGestoraUsuarioBL.cs" />
     <Compile Include="Listados\clsListadoDepartamentosBL.cs" />
     <Compile Include="Listados\clsListadoPersonasBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -47,7 +47,8 @@ namespace CRUDPersonas_UI.Controllers
         [HttpPost, ActionName("Delete")]
         public ActionResult DeletePost(int id) {
             try {
-                clsGestoraPersonaBL.eliminarPersona(id);
+                clsGestoraArtistaBL.obtenerListadoArtistas();
+                //clsGestoraPersonaBL.eliminarPersona(id);
             } catch (Exception e) {
                 ViewData["Error"] = "Ha habido un error al elimianr a la persona";
                 return RedirectToAction("Error");

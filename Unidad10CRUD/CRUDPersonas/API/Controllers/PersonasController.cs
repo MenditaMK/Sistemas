@@ -13,12 +13,13 @@ namespace API.Controllers
     public class PersonasController : ApiController
     {
         // GET: api/Personas
-        public IEnumerable<clsPersona> Get()
+        public IEnumerable<clsPersona> Get([FromUri] String hola)
         {
             List<clsPersona> listadoPersonas = null;
             try
             {
-                listadoPersonas = clsListadoPersonasBL.obtenerListadoCompleto();
+                if (String.IsNullOrEmpty(hola)) { listadoPersonas = clsListadoPersonasBL.obtenerListadoCompleto(); }
+                else { listadoPersonas.Add(new clsPersona()); }
             }
             catch (Exception e) {
                 throw new HttpResponseException(HttpStatusCode.ServiceUnavailable);

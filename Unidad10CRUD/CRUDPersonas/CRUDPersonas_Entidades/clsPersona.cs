@@ -34,7 +34,9 @@ namespace CRUDPersonas_Entidades
             this.IdDepartamento = idDepartamento;
         }
 
-        public clsPersona() { }
+        public clsPersona() {
+            this.Nombre = "Evelyn";
+        }
         #endregion
 
         #region Propiedades

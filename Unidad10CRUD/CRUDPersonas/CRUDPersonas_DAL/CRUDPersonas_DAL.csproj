@@ -41,8 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsGestoraArtistaDAL.cs" />
     <Compile Include="Conexion\clsMyConnection.cs" />
     <Compile Include="Handlers\clsGestoraPersonaDAL.cs" />
+    <Compile Include="Handlers\clsGestoraSalaDAL.cs" />
+    <Compile Include="Handlers\clsGestoraUsuarioDAL.cs" />
     <Compile Include="Listados\clsListadoDepartamentoDAL.cs" />
     <Compile Include="Listados\clsListadoPersonasDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
