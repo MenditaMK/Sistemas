@@ -1,0 +1,105 @@
+﻿@model CRUDPersonas_UI.Models.clsPersonaListadoDepartamentos
+
+@{
+    Layout = null;
+    String nombreCompleto = Model.Nombre + " " + Model.Apellidos;
+}
+
+<!DOCTYPE html>
+
+<html>
+<style>
+
+    body {
+        border: solid;
+        border-color: #990000;
+        padding: 10px;
+        background-color: #fdfdf1;
+    }
+
+    div {
+        font-size: 12px;
+        font-weight: bold;
+        background-image: url(fondo_tr02.png);
+        background-repeat: repeat-x;
+        color: #990000;
+        font-family: “Trebuchet MS”, Arial;
+        text-align: left;
+        margin: 10px;
+    }
+</style>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit</title>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        
+        <div class="form-horizontal">
+            <h4>@nombreCompleto</h4>
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @Html.HiddenFor(model => model.Id)
+    
+        <div class="form-group">
+            <u>@Html.LabelFor(model => model.Nombre, htmlAttributes: new { @class = "control-label col-md-2" })</u>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Nombre, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Nombre, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    
+        <div class="form-group">
+            <u>@Html.LabelFor(model => model.Apellidos, htmlAttributes: new { @class = "control-label col-md-2" })</u>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Apellidos, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Apellidos, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    
+        <div class="form-group">
+           <u>Fecha de nacimiento</u>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.FechaNacimiento, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.FechaNacimiento, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    
+        <div class="form-group">
+            <u>Dirección</u>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Direccion, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Direccion, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    
+        <div class="form-group">
+            <u>Teléfono</u>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Telefono, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Telefono, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    
+        <div class="form-group">
+            <u>Nombre del departamento</u>
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.IdDepartamento, new SelectList(Model.ListadoDepartamentos, "ID", "Nombre"), new { @class = "form-control" })
+            </div>
+        </div>
+    
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Guardar" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    }
+    
+    <div>
+        @Html.ActionLink("Volver al menú principal", "Index")
+    </div>
+</body>
+</html>

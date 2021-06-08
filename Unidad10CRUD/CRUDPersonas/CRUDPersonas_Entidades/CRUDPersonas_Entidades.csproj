@@ -46,9 +46,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsArtista.cs" />
-    <Compile Include="clsDepartamento.cs" />
+    <Compile Include="clsEvento.cs" />
+    <Compile Include="clsEventoDatos.cs" />
     <Compile Include="clsLoginInformation.cs" />
-    <Compile Include="clsPersona.cs" />
+    <Compile Include="clsPost.cs" />
     <Compile Include="clsSala.cs" />
     <Compile Include="clsUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

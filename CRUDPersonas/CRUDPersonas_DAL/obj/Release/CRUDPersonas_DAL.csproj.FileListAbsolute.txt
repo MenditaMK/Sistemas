@@ -1,0 +1,9 @@
+C:\Users\mendi\Documents\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_DAL\bin\Release\CRUDPersonas_DAL.dll
+C:\Users\mendi\Documents\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_DAL\bin\Release\CRUDPersonas_DAL.pdb
+C:\Users\mendi\Documents\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_DAL\bin\Release\CRUDPersonas_Entidades.dll
+C:\Users\mendi\Documents\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_DAL\bin\Release\CRUDPersonas_Entidades.pdb
+C:\Users\mendi\Documents\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_DAL\obj\Release\CRUDPersonas_DAL.csprojAssemblyReference.cache
+C:\Users\mendi\Documents\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_DAL\obj\Release\CRUDPersonas_DAL.csproj.CoreCompileInputs.cache
+C:\Users\mendi\Documents\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_DAL\obj\Release\CRUDPersonas_DAL.csproj.CopyComplete
+C:\Users\mendi\Documents\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_DAL\obj\Release\CRUDPersonas_DAL.dll
+C:\Users\mendi\Documents\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_DAL\obj\Release\CRUDPersonas_DAL.pdb

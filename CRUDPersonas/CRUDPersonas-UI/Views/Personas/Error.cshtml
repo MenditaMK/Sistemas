@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<style>
+    body {
+        background-color: #fdfdf1;
+    }
+</style>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Error</title>
+</head>
+<body>
+    <div>
+        @ViewData["Error"] <br />
+        <p></p>
+        @Html.ActionLink("Volver al menu principal", "Index")
+    </div>
+</body>
+</html>

@@ -86,9 +86,9 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\ArtistaController.cs" />
-    <Compile Include="Controllers\DefaultController.cs" />
-    <Compile Include="Controllers\DepartamentosController.cs" />
-    <Compile Include="Controllers\PersonasController.cs" />
+    <Compile Include="Controllers\EventoController.cs" />
+    <Compile Include="Controllers\EventoUtilitiesController.cs" />
+    <Compile Include="Controllers\PostController.cs" />
     <Compile Include="Controllers\SalaController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\UserUtilitiesController.cs" />
@@ -96,6 +96,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\clsEmailPassword.cs" />
+    <Compile Include="Models\clsListadoArtistasEvento.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

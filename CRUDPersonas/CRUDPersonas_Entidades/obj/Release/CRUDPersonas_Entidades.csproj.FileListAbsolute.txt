@@ -1,0 +1,6 @@
+C:\Users\mendi\Documents\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_Entidades\bin\Release\CRUDPersonas_Entidades.dll
+C:\Users\mendi\Documents\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_Entidades\bin\Release\CRUDPersonas_Entidades.pdb
+C:\Users\mendi\Documents\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_Entidades\obj\Release\CRUDPersonas_Entidades.csprojAssemblyReference.cache
+C:\Users\mendi\Documents\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_Entidades\obj\Release\CRUDPersonas_Entidades.csproj.CoreCompileInputs.cache
+C:\Users\mendi\Documents\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_Entidades\obj\Release\CRUDPersonas_Entidades.dll
+C:\Users\mendi\Documents\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_Entidades\obj\Release\CRUDPersonas_Entidades.pdb

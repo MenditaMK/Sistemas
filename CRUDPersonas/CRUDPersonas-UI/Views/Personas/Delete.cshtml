@@ -1,0 +1,110 @@
+﻿@model CRUDPersonas_UI.Models.clsPersonaNombreDepartamento
+
+@{
+    Layout = null;
+
+    String nombreCompleto = Model.Nombre+" "+ Model.Apellidos;
+}
+
+<!DOCTYPE html>
+
+<html>
+<style>
+
+    body {
+        border: solid;
+        border-color: #990000;
+        padding: 10px;
+        background-color: #fdfdf1;
+    }
+
+    div {
+        font-size: 12px;
+        font-weight: bold;
+        background-image: url(fondo_tr02.png);
+        background-repeat: repeat-x;
+        color: #990000;
+        font-family: “Trebuchet MS”, Arial;
+        text-align: left;
+        margin: 10px;
+    }
+
+    dt {
+        margin:10px;
+    }
+
+    dd {
+        color:black;
+    }
+</style>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+    <h3>¿Estás seguro de eliminar a esta persona?</h3>
+    <div>
+        <h4>@nombreCompleto</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                <u>@Html.DisplayNameFor(model => model.Nombre)</u>
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Nombre)
+            </dd>
+    
+            <dt>
+               <u> @Html.DisplayNameFor(model => model.Apellidos)</u>
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Apellidos)
+            </dd>
+    
+            <dt>
+               <u>Fecha de nacimiento</u>
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.FechaNacimiento)
+            </dd>
+    
+            <dt>
+               <u>Dirección</u>
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Direccion)
+            </dd>
+    
+            <dt>
+                <u>Teléfono</u>
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Telefono)
+            </dd>
+    
+            <dt>
+               <u>Nombre del departamento</u>
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.NombreDepartamento)
+            </dd>
+    
+        </dl>
+    
+        @using (Html.BeginForm()) {
+            @Html.AntiForgeryToken()
+    
+            <div class="form-actions no-color">
+                <input type="submit" value="Eliminar" class="btn btn-default" /> |
+                @Html.ActionLink("Volver al menú principal", "Index")
+            </div>
+        }
+    </div>
+</body>
+</html>

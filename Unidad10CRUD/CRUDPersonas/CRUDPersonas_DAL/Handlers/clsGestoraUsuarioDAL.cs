@@ -51,6 +51,50 @@ namespace CRUDPersonas_DAL.Handlers
             return numeroFilasAfectadas;
         }
 
+        /// <summary>
+        /// Este método actualiza los datos de un usuario
+        /// </summary>
+        /// <param name="id">El nick del usuario</param>
+        /// <param name="usuario">El usuario con los datos cambiados</param>
+        /// <returns>El número de filas afectadas</returns>
+        public static int actualizarUsuario(string id, clsUsuario usuario)
+        {
+            SqlConnection sqlConnection = new SqlConnection();
+            clsMyConnection conexion = new clsMyConnection();
+            SqlCommand sqlCommand = new SqlCommand();
+            int filasAfectadas = 0;
+            sqlCommand.Parameters.AddWithValue("@Nick", usuario.Nick);
+            sqlCommand.Parameters.AddWithValue("@Nombre", usuario.Nombre);
+            sqlCommand.Parameters.AddWithValue("@Password", usuario.Password);
+            sqlCommand.Parameters.AddWithValue("@Imagen", usuario.Imagen);
+            sqlCommand.Parameters.AddWithValue("@Tipo", usuario.Tipo);
+            sqlCommand.Parameters.AddWithValue("@Email", usuario.Email);
+            sqlCommand.Parameters.AddWithValue("@ID", id);
+            sqlCommand.CommandText = "UPDATE Usuario SET Nick = @Nick, Email = @Email, Nombre = @Nombre, Password = @Password, Imagen = @Imagen, Tipo = @Tipo WHERE Nick = @ID";
+
+            try
+            {
+                sqlConnection = conexion.getConnection();
+                sqlCommand.Connection = sqlConnection;
+                filasAfectadas = sqlCommand.ExecuteNonQuery();
+            }
+            catch (SqlException e)
+            {
+                throw e;
+            }
+            finally
+            {
+                conexion.closeConnection(ref sqlConnection);
+            }
+            return filasAfectadas;
+        }
+
+        /// <summary>
+        /// Este método actualiza la contraseña de un usuario
+        /// </summary>
+        /// <param name="email">El email</param>
+        /// <param name="password">La nueva contraseña</param>
+        /// <returns>El número de filas afectadas</returns>
         public static int actualizarPassword(String email, String password)
         {
             SqlConnection sqlConnection = new SqlConnection();
@@ -78,6 +122,11 @@ namespace CRUDPersonas_DAL.Handlers
             return filasAfectadas;
         }
 
+        /// <summary>
+        /// Este método verifica si existe un usuario con tales credenciales y en tal caso obtener los datos del usuario
+        /// </summary>
+        /// <param name="loginInformation">Las credenciales</param>
+        /// <returns>El usuario en caso de existir</returns>
         public static clsUsuario obtenerUsuario(clsLoginInformation loginInformation)
         {
             clsMyConnection conexion = new clsMyConnection();
@@ -125,6 +174,10 @@ namespace CRUDPersonas_DAL.Handlers
             return usuario;
         }
 
+        /// <summary>
+        /// Este método obtiene de la base de datos el listado de usuarios
+        /// </summary>
+        /// <returns>El listado de usuarios</returns>
         public static List<clsUsuario> obtenerListadoUsuarios() {
             clsMyConnection conexion = new clsMyConnection();
             SqlConnection sqlConnection = new SqlConnection();
@@ -169,6 +222,11 @@ namespace CRUDPersonas_DAL.Handlers
             return listadoUsuarios;
         }
 
+        /// <summary>
+        /// Este método comprueba en la base de datos si ya existe un usuario con un nick determinado
+        /// </summary>
+        /// <param name="nick">El nick</param>
+        /// <returns>Se devuelve 1 en caso de existir ya un usuario con tal nick y 0 en caso contrario</returns>
         public static int comprobarExistenciaUsuarioPorNick(String nick) {
             clsMyConnection conexion = new clsMyConnection();
             SqlConnection sqlConnection = new SqlConnection();
@@ -200,6 +258,11 @@ namespace CRUDPersonas_DAL.Handlers
             return usuarioEncontrado;
         }
 
+        /// <summary>
+        /// Este método comprueba en la base de datos si ya existe un usuario con un email determinado
+        /// </summary>
+        /// <param name="email">El email</param>
+        /// <returns>Se devuelve 1 en caso de existir ya un usuario con tal email y 0 en caso contrario</returns>
         public static int comprobarExistenciaUsuarioPorEmail(String email) {
             clsMyConnection conexion = new clsMyConnection();
             SqlConnection sqlConnection = new SqlConnection();
@@ -217,18 +280,6 @@ namespace CRUDPersonas_DAL.Handlers
                 if (reader.HasRows)
                 {
                     usuarioEncontrado = 1;
-                    //while (reader.Read())
-                    //{
-                    //    usuario = new clsUsuario();
-                    //    usuario.Nick = (String)reader["Nick"];
-                    //    usuario.Email = (String)reader["Email"];
-                    //    usuario.Nombre = (String)reader["Nombre"];
-                    //    usuario.Password = (String)reader["Password"];
-                    //    if (reader["Imagen"] != System.DBNull.Value)
-                    //    {
-                    //        usuario.Imagen = (String)reader["Imagen"];
-                    //    }
-                    //}
                 }
                 reader.Close();
             }

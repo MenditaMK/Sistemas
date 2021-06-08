@@ -1,0 +1,12 @@
+D:\JuanAntonioQuintero\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_Entidades\bin\Debug\CRUDPersonas_Entidades.dll
+D:\JuanAntonioQuintero\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_Entidades\bin\Debug\CRUDPersonas_Entidades.pdb
+D:\JuanAntonioQuintero\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_Entidades\obj\Debug\CRUDPersonas_Entidades.csprojAssemblyReference.cache
+D:\JuanAntonioQuintero\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_Entidades\obj\Debug\CRUDPersonas_Entidades.csproj.CoreCompileInputs.cache
+D:\JuanAntonioQuintero\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_Entidades\obj\Debug\CRUDPersonas_Entidades.dll
+D:\JuanAntonioQuintero\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_Entidades\obj\Debug\CRUDPersonas_Entidades.pdb
+C:\Users\mendi\Documents\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_Entidades\obj\Debug\CRUDPersonas_Entidades.csproj.CoreCompileInputs.cache
+C:\Users\mendi\Documents\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_Entidades\obj\Debug\CRUDPersonas_Entidades.csprojAssemblyReference.cache
+C:\Users\mendi\Documents\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_Entidades\bin\Debug\CRUDPersonas_Entidades.dll
+C:\Users\mendi\Documents\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_Entidades\bin\Debug\CRUDPersonas_Entidades.pdb
+C:\Users\mendi\Documents\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_Entidades\obj\Debug\CRUDPersonas_Entidades.dll
+C:\Users\mendi\Documents\GitHub\Sistemas\Unidad10CRUD\CRUDPersonas\CRUDPersonas_Entidades\obj\Debug\CRUDPersonas_Entidades.pdb
